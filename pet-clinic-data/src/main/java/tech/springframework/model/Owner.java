@@ -1,4 +1,4 @@
-package com.springpetclinic.model;
+package tech.springframework.model;
 
 public class Owner extends  Person {
 }
