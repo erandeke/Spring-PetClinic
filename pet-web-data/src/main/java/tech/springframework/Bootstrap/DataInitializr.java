@@ -32,9 +32,9 @@ public class DataInitializr implements CommandLineRunner {
         ownerService.save(1L, owner1);
 
         Owner owner2 = new Owner();
-        owner1.setId(2L);
-        owner1.setFirstName("John");
-        owner1.setLastName("Thompson");
+        owner2.setId(2L);
+        owner2.setFirstName("John");
+        owner2.setLastName("Thompson");
 
         ownerService.save(2L, owner2);
 
