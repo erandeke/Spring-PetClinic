@@ -46,9 +46,9 @@ public class DataInitializr implements CommandLineRunner {
         vetService.save(1L, vet1);
 
         Vet vet2 = new Vet();
-        vet1.setId(1L);
-        vet1.setFirstName("rs");
-        vet1.setLastName("ash");
+        vet2.setId(2L);
+        vet2.setFirstName("rs");
+        vet2.setLastName("ash");
 
         vetService.save(2L, vet2);
 
