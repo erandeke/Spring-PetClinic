@@ -1,24 +1,25 @@
 package tech.springframework.Bootstrap;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import tech.springframework.model.Owner;
 import tech.springframework.model.Vet;
 import tech.springframework.services.OwnerService;
 import tech.springframework.services.VetService;
-import tech.springframework.services.mapservices.OwnerServiceMap;
-import tech.springframework.services.mapservices.VetServiceMap;
 
 @Component
 public class DataInitializr implements CommandLineRunner {
 
-    private final OwnerServiceMap ownerService;
-    private final VetServiceMap vetService;
+    private final OwnerService ownerService;
+    private final VetService vetService;
 
-    public DataInitializr() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    @Autowired
+    public DataInitializr(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
+
 
     @Override
     public void run(String... args) throws Exception {

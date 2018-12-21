@@ -1,5 +1,6 @@
 package tech.springframework.services.mapservices;
 
+import org.springframework.stereotype.Service;
 import tech.springframework.model.Owner;
 import tech.springframework.services.CrudService;
 import tech.springframework.services.OwnerService;
@@ -7,8 +8,8 @@ import tech.springframework.services.OwnerService;
 import java.util.Map;
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapServices<Owner, Long>  implements OwnerService {
-
 
     @Override
     public Owner findByFirstName(String firstName) {
