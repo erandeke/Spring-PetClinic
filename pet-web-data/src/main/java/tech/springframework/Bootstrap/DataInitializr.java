@@ -3,10 +3,12 @@ package tech.springframework.Bootstrap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import tech.springframework.*;
 import tech.springframework.model.Owner;
 import tech.springframework.model.Vet;
 import tech.springframework.services.OwnerService;
 import tech.springframework.services.VetService;
+
 
 @Component
 public class DataInitializr implements CommandLineRunner {
