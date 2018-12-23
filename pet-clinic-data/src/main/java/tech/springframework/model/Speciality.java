@@ -2,14 +2,14 @@ package tech.springframework.model;
 
 import lombok.*;
 
-import java.util.Set;
-
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class Vet extends Person {
+public class Speciality extends  BaseEntity {
 
-    private Set<Speciality> speciality;
+    private String description;
+
 
 }
