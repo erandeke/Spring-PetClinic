@@ -1,4 +1,11 @@
 package tech.springframework.model;
 
-public class Vet extends  Person {
+import lombok.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class Vet extends Person {
 }

@@ -1,14 +1,14 @@
 package tech.springframework.model;
 
-public class PetType extends  BaseEntity {
+import lombok.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class PetType extends BaseEntity {
 
     private String name;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }

@@ -3,7 +3,6 @@ package tech.springframework.Bootstrap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import tech.springframework.*;
 import tech.springframework.model.Owner;
 import tech.springframework.model.Vet;
 import tech.springframework.services.OwnerService;
@@ -53,6 +52,8 @@ public class DataInitializr implements CommandLineRunner {
         vet2.setLastName("ash");
 
         vetService.save(2L, vet2);
+
+
 
 
     }
